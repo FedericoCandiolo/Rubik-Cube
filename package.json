@@ -1,0 +1,24 @@
+{
+  "name": "rubik",
+  "version": "1.0.0",
+  "description": "A Rubik Cube solver",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedericoCandiolo/Rubik-Cube.git"
+  },
+  "author": "FedericoCandiolo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FedericoCandiolo/Rubik-Cube/issues"
+  },
+  "homepage": "https://github.com/FedericoCandiolo/Rubik-Cube#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "expresss": "0.0.0",
+    "jade": "^1.11.0"
+  }
+}

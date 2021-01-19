@@ -1,0 +1,62 @@
+body{
+    background-color: gray;
+}
+
+.cube{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    grid-template-areas: "vacio vacio u vacio"
+                         "b l f r"
+                         "vacio vacio f vacio";
+}
+
+}
+
+.face{
+    display: table;
+    /* display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-template-areas: "c0 c1 c2"
+                         "c3 c4 c5"
+                         "c6 c7 c8"; */
+}
+
+.f{
+    grid-area: "f";
+    background-color: red;
+}
+
+.b{
+    grid-area: "b";
+    background-color: orangered;
+}
+
+.u{
+    grid-area: "u";
+    background-color: white;
+}
+
+.d{
+    grid-area: "d";
+    background-color: yellow;
+}
+
+.l{
+    grid-area: "l";
+    background-color: green;
+}
+
+.r{
+    grid-area: "r";
+    background-color: blue;
+}
+
+.row{
+    display: table-row;
+}
+
+.cell{
+    display: table-cell;
+    border-width: 2px;
+    border-color: black;
+}

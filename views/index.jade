@@ -1,0 +1,36 @@
+extends ./layout.jade
+
+block contenido
+    div(class="cube")
+        p(style="grid-area:'vacio'") V
+        p(style="grid-area:'vacio'") V
+        div(class="face u")
+            - for(let i = 0; i <= 8; i++)
+                div(class="row")
+                    p!= `<div class="cell" style="grid-area: 'c${i}'"> <p>${(i == 4 ? "C" : i)}</p> </div>`
+        p(style="grid-area:'vacio'") V
+
+        div(class="face b")
+            - for(let i = 0; i <= 3; i++)
+                    div(class="row")
+                    p!= `<p class="cell" style="grid-area: 'c${i}'"> ${(i == 4 ? "C" : i)} </p>`
+        div(class="face l")
+            - for(let i = 0; i <= 8; i++)
+                div(class="row")
+                    p!= `<p class="cell" style="grid-area: 'c${i}'"> ${(i == 4 ? "C" : i)} </p>`
+        div(class="face f")
+            - for(let i = 0; i <= 8; i++)
+                div(class="row")
+                    p!= `<p class="cell" style="grid-area: 'c${i}'"> ${(i == 4 ? "C" : i)} </p>`
+        div(class="face r")
+            - for(let i = 0; i <= 8; i++)
+                div(class="row")
+                    p!= `<p class="cell" style="grid-area: 'c${i}'"> ${(i == 4 ? "C" : i)} </p>`
+
+        p(style="grid-area:'vacio'") V
+        p(style="grid-area:'vacio'") V
+        div(class="face d")
+            - for(let i = 0; i <= 8; i++)
+                div(class="row")
+                    p!= `<p class="cell" style="grid-area: 'c${i}'"> ${(i == 4 ? "C" : i)} </p>`
+        p(style="grid-area:'vacio'") V
