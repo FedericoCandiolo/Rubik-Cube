@@ -12,12 +12,14 @@ El tradicional cubo de rubik es un cubo de 3x3x3 piezas con colores en ellas. Co
 ## Tecnologías
 
 Este proyecto está hecho con:
-- node.js
-- Sistema de gestión de paquetes npm
+- [node.js](https://nodejs.org/es/download/)
+- Sistema de gestión de paquetes [npm](https://docs.npmjs.com/cli/v6/commands/npm-install/)
 - Framework express
 - View engine JADE
 - CSS
 - Vanilla JS
+
+Para esto se debe instalar node y npm. Luego desde la terminal, desde el directorio del proyecto ejecutar _npm install_ para instalar los node_modules
 
 ### Explicación del funcionamiento del cubo de rubik
 En un cubo de rubik hay 20 piezas moviles
