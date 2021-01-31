@@ -39,10 +39,21 @@ body{
     align-items: stretch;
 }
 
+.center{
+    margin: 0 auto;
+    text-align: center;
+}
+
 .half_screen_square{
     width: 45%;
     border:thick solid #000044;
     padding: 1%;
+}
+
+.vertical-center{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 .block_img{    
@@ -55,8 +66,8 @@ body{
 }
 
 .btn-cube{
-    width: 95%;
-    height: 95%;
+    width: 28px;
+    height: 28px;
     margin: 1.5%;
     border-radius: 0%;
     background-color: white;
@@ -70,4 +81,45 @@ body{
     height: 0;
     padding-top:0%;
     position:relative;
+}
+
+.btn-solve{
+    width: 40%;
+    height: 7%;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+#solution{
+    margin: 10px;
+}
+
+@media (max-width: 1200px){
+    .btn-cube{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 1050px){
+    .btn-cube{
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (max-width: 1050px){
+    .horizontal{
+        flex-flow: column;
+    }
+
+    .half_screen_square{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .btn-cube{
+        width: 30px;
+        height: 30px;
+    }
 }

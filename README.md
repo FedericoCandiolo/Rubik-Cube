@@ -1,3 +1,25 @@
+# Resolvedor de cubos de rubik
+
+## Introducción
+El tradicional cubo de rubik es un cubo de 3x3x3 piezas con colores en ellas. Contiene 6 centros de colores, fijos que rotan sobre sí mismos; 12 aristas, adyacentes a 2 centros, y con sus mismos colores; y 8 esquinas, de 3 colores, que son adyacentes a 3 aristas. Esto da como resultado un cubo con 6 caras de distintos colores:
+- Rojo al frente
+- Naranja detrás
+- Blanco arriba
+- Amarillo abajo
+- Verde a la izquierda
+- Azul a la derecha
+
+## Tecnologías
+
+Este proyecto está hecho con:
+- node.js
+- Sistema de gestión de paquetes npm
+- Framework express
+- View engine JADE
+- CSS
+- Vanilla JS
+
+### Explicación del funcionamiento del cubo de rubik
 En un cubo de rubik hay 20 piezas moviles
 12 aristas, que tienen 2 colores y pueden estar en 2 posiciones
 8 vertices, que tienen 3 colores y pueden estar en 3 posiciones
@@ -27,4 +49,9 @@ Dado que V(12) = se aproxima a = 5.9190874
 Entonces R^12 = 2515205230010826752 / 5.9190874
          29 < R < 30
 
-Por lo tanto, todo cubo se puede resolver en, como maximo, 30 movimientos
+Por lo tanto, todo cubo se puede resolver en, como maximo, 30 movimientos.
+
+### Lentitud del código
+Sin embargo, una recursión con tan alta multiplicidad da como resultado, una complejidad algorirmica de O(f(n)) = O(n^12), sin tener en cuenta la complejidad de cada intancia de recursión. Sea esta O(g(n)), entonces la verdadera complejidad sería (g . f (n)), o, expresado de otra manera, O(f(g(n))) = O(f(n)^12).
+
+Por esto, es posible considerar conveniente desarrollar un algoritmo que ya no busque la manera más corta de resolverlo, sino una manera de resolverlo, cualquiera sea. Luego, se podría optimizar para eliminar los pasos repetidos.

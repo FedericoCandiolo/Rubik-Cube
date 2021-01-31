@@ -11,26 +11,33 @@ block contenido
             p Click on each color to change the color of the sticker, but centers should not be changed. For the edges, take into account that the stickers of different faces must match its colors (as it the cube was empty and opened in a sheet).
             p Place the red face at the front and the white one top, and do the moves of the solution.
             
-            h2(id="solution") Solution
+            ul
+                each move, i in moves
+                    li!= "<p>" + move + ": Turn <span style='color: " + colors_code[i] + "'> " + colors_moves[i] + "</span> face clockwise. </p>"
 
-        table(class="half_screen_square", id ="cube_2d")
-            - var i = 0
-            each row in [0,1,2]
-                tr
-                    each col in [0,1,2,3]
-                        td
-                            if row == 1 || col == 1
-                                table(class="face")
-                                    each cube_row in [0,1,2]
-                                        tr
-                                            each cube_col in [0,1,2]
-                                                td  
-                                                    - var this_id = "" + cube_row + cube_col+ colors[i]
-                                                    if cube_col == 1 && cube_row == 1
-                                                        input(type="submit",class = "btn-cube", value = "", id= this_id, style="background-color: " + colors_code[i])
-                                                    else
-                                                        input(type="submit",class = "btn-cube", value = "", id= this_id, style="background-color: " + colors_code[i], onClick = `nextColor("${this_id}")`)
-                                - i = i+1
-                            else
-                                div(class="face")
-    button(onClick="translateCube(document.getElementById('cube_2d'))") Solve!
+            p If the movement has a "p", then it should be done anticlockwise.
+
+        section(class="half_screen_square vertical-center")
+            table(id ="cube_2d")
+                - var i = 0
+                each row in [0,1,2]
+                    tr
+                        each col in [0,1,2,3]
+                            td
+                                if row == 1 || col == 1
+                                    table(class="face")
+                                        each cube_row in [0,1,2]
+                                            tr
+                                                each cube_col in [0,1,2]
+                                                    td  
+                                                        - var this_id = "" + cube_row + cube_col+ colors[i]
+                                                        if cube_col == 1 && cube_row == 1
+                                                            input(type="submit",class = "btn-cube", value = "", id= this_id, style="background-color: " + colors_code[i])
+                                                        else
+                                                            input(type="submit",class = "btn-cube", value = "", id= this_id, style="background-color: " + colors_code[i], onClick = `nextColor("${this_id}")`)
+                                    - i = i+1
+                                else
+                                    div(class="face")
+
+            button(class= "btn-solve", onClick="translateCube(document.getElementById('cube_2d'))") Solve!
+            h2(id="solution") Solution
