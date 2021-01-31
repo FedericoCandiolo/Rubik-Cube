@@ -4,7 +4,14 @@ html(lang="es")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(href="/static/css/styles.css", type="text/css", rel="stylesheet")
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Yusei+Magic&display=swap" rel="stylesheet">
+        script(type='text/javascript', src="/static/js/colors.js")
+        script(type='text/javascript', src="/static/js/rubik.js")
         title Rubik Cube Solver
     body        
-        h1 Rubik Cube Solver
+        div(class="container")
+            div(class="title")
+                section 
+                    p(class="title-text") Rubik Cube Solver
             block contenido

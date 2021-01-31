@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/FedericoCandiolo/Rubik-Cube#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "expresss": "0.0.0",
     "jade": "^1.11.0"

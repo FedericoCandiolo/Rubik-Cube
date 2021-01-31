@@ -1,0 +1,49 @@
+<svg width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="182" width="182" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_2" height="30" width="30" y="-0.24982" x="-0.24982" stroke-width="1.5" stroke="#000" fill="#ff7c12"/>
+  <rect id="svg_6" height="30" width="30" y="-0.24982" x="29.81355" stroke-width="1.5" stroke="#000" fill="#ffcb12"/>
+  <rect id="svg_7" height="30" width="30" y="-0.24982" x="59.75214" stroke-width="1.5" stroke="#000" fill="#040fba"/>
+  <rect id="svg_8" height="30" width="30" y="-0.24982" x="89.81551" stroke-width="1.5" stroke="#000" fill="#ba1e04"/>
+  <rect id="svg_9" height="30" width="30" y="-0.24982" x="119.77062" stroke-width="1.5" stroke="#000" fill="#ffffff"/>
+  <rect id="svg_10" height="30" width="30" y="-0.24982" x="149.83398" stroke-width="1.5" stroke="#000" fill="#04ba25"/>
+  <rect id="svg_11" height="30" width="30" y="29.85411" x="-0.24982" stroke-width="1.5" stroke="#000" fill="#ba1e04"/>
+  <rect id="svg_12" height="30" width="30" y="29.85411" x="29.81355" stroke-width="1.5" stroke="#000" fill="#ffffff"/>
+  <rect id="svg_13" height="30" width="30" y="29.85411" x="59.75214" stroke-width="1.5" stroke="#000" fill="#04ba25"/>
+  <rect id="svg_14" height="30" width="30" y="29.85411" x="89.81551" stroke-width="1.5" stroke="#000" fill="#ff7c12"/>
+  <rect id="svg_15" height="30" width="30" y="29.85411" x="119.77062" stroke-width="1.5" stroke="#000" fill="#ffcb12"/>
+  <rect id="svg_16" height="30" width="30" y="29.85411" x="149.83398" stroke-width="1.5" stroke="#000" fill="#040fba"/>
+  <rect id="svg_17" height="30" width="30" y="59.80212" x="-0.24982" stroke-width="1.5" stroke="#000" fill="#040fba"/>
+  <rect id="svg_18" height="30" width="30" y="59.80212" x="29.81355" stroke-width="1.5" stroke="#000" fill="#ff7c12"/>
+  <rect id="svg_19" height="30" width="30" y="59.80212" x="59.75214" stroke-width="1.5" stroke="#000" fill="#ffcb12"/>
+  <rect id="svg_20" height="30" width="30" y="59.80212" x="89.81551" stroke-width="1.5" stroke="#000" fill="#04ba25"/>
+  <rect id="svg_21" height="30" width="30" y="59.80212" x="119.77062" stroke-width="1.5" stroke="#000" fill="#ba1e04"/>
+  <rect id="svg_22" height="30" width="30" y="59.80212" x="149.83398" stroke-width="1.5" stroke="#000" fill="#ffffff"/>
+  <rect id="svg_23" height="30" width="30" y="89.90605" x="-0.24982" stroke-width="1.5" stroke="#000" fill="#04ba25"/>
+  <rect id="svg_24" height="30" width="30" y="89.90605" x="29.81355" stroke-width="1.5" stroke="#000" fill="#ba1e04"/>
+  <rect id="svg_25" height="30" width="30" y="89.90605" x="59.75214" stroke-width="1.5" stroke="#000" fill="#ffffff"/>
+  <rect id="svg_26" height="30" width="30" y="89.90605" x="89.81551" stroke-width="1.5" stroke="#000" fill="#040fba"/>
+  <rect id="svg_27" height="30" width="30" y="89.90605" x="119.77062" stroke-width="1.5" stroke="#000" fill="#ff7c12"/>
+  <rect id="svg_28" height="30" width="30" y="89.90605" x="149.83398" stroke-width="1.5" stroke="#000" fill="#ffcb12"/>
+  <rect id="svg_29" height="30" width="30" y="119.80055" x="-0.24982" stroke-width="1.5" stroke="#000" fill="#ffcb12"/>
+  <rect id="svg_30" height="30" width="30" y="120.30055" x="29.81355" stroke-width="1.5" stroke="#000" fill="#040fba"/>
+  <rect id="svg_31" height="30" width="30" y="119.80055" x="59.75214" stroke-width="1.5" stroke="#000" fill="#ff7c12"/>
+  <rect id="svg_32" height="30" width="30" y="119.80055" x="89.81551" stroke-width="1.5" stroke="#000" fill="#ffffff"/>
+  <rect id="svg_33" height="30" width="30" y="119.80055" x="119.77062" stroke-width="1.5" stroke="#000" fill="#04ba25"/>
+  <rect id="svg_34" height="30" width="30" y="119.80055" x="149.83398" stroke-width="1.5" stroke="#000" fill="#ba1e04"/>
+  <rect id="svg_35" height="30" width="30" y="149.90447" x="-0.24982" stroke-width="1.5" stroke="#000" fill="#ffffff"/>
+  <rect id="svg_36" height="30" width="30" y="149.90447" x="29.81355" stroke-width="1.5" stroke="#000" fill="#04ba25"/>
+  <rect id="svg_37" height="30" width="30" y="149.90447" x="60.25214" stroke-width="1.5" stroke="#000" fill="#ba1e04"/>
+  <rect id="svg_38" height="30" width="30" y="149.90447" x="89.81551" stroke-width="1.5" stroke="#000" fill="#ffcb12"/>
+  <rect id="svg_39" height="30" width="30" y="149.90447" x="119.77062" stroke-width="1.5" stroke="#000" fill="#040fba"/>
+  <rect id="svg_40" height="30" width="30" y="149.90447" x="149.83398" stroke-width="1.5" stroke="#000" fill="#ff7c12"/>
+ </g>
+</svg>

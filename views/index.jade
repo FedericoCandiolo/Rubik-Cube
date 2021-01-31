@@ -1,36 +1,36 @@
 extends ./layout.jade
 
 block contenido
-    div(class="cube")
-        p(style="grid-area:'vacio'") V
-        p(style="grid-area:'vacio'") V
-        div(class="face u")
-            - for(let i = 0; i <= 8; i++)
-                div(class="row")
-                    p!= `<div class="cell" style="grid-area: 'c${i}'"> <p>${(i == 4 ? "C" : i)}</p> </div>`
-        p(style="grid-area:'vacio'") V
+    div(class="horizontal")
+        - var colors = ["o", "g", "w", "b", "y", "r"]
+        - var colors_code = ["rgb(255, 124, 18)", "rgb(4, 186, 37)", "rgb(255, 255, 255)", "rgb(4, 15, 186)", "rgb(255, 203, 18)", "rgb(186, 30, 4)"]
+        -var colors_moves = ["orange", "green", "white", "blue", "yellow", "red"]
+        -var moves = ["b", "r", "u", "l", "d", "f"]
+        section(class="half_screen_square")
+            h3 Instructions:
+            p Click on each color to change the color of the sticker, but centers should not be changed. For the edges, take into account that the stickers of different faces must match its colors (as it the cube was empty and opened in a sheet).
+            p Place the red face at the front and the white one top, and do the moves of the solution.
+            
+            h2(id="solution") Solution
 
-        div(class="face b")
-            - for(let i = 0; i <= 3; i++)
-                    div(class="row")
-                    p!= `<p class="cell" style="grid-area: 'c${i}'"> ${(i == 4 ? "C" : i)} </p>`
-        div(class="face l")
-            - for(let i = 0; i <= 8; i++)
-                div(class="row")
-                    p!= `<p class="cell" style="grid-area: 'c${i}'"> ${(i == 4 ? "C" : i)} </p>`
-        div(class="face f")
-            - for(let i = 0; i <= 8; i++)
-                div(class="row")
-                    p!= `<p class="cell" style="grid-area: 'c${i}'"> ${(i == 4 ? "C" : i)} </p>`
-        div(class="face r")
-            - for(let i = 0; i <= 8; i++)
-                div(class="row")
-                    p!= `<p class="cell" style="grid-area: 'c${i}'"> ${(i == 4 ? "C" : i)} </p>`
-
-        p(style="grid-area:'vacio'") V
-        p(style="grid-area:'vacio'") V
-        div(class="face d")
-            - for(let i = 0; i <= 8; i++)
-                div(class="row")
-                    p!= `<p class="cell" style="grid-area: 'c${i}'"> ${(i == 4 ? "C" : i)} </p>`
-        p(style="grid-area:'vacio'") V
+        table(class="half_screen_square", id ="cube_2d")
+            - var i = 0
+            each row in [0,1,2]
+                tr
+                    each col in [0,1,2,3]
+                        td
+                            if row == 1 || col == 1
+                                table(class="face")
+                                    each cube_row in [0,1,2]
+                                        tr
+                                            each cube_col in [0,1,2]
+                                                td  
+                                                    - var this_id = "" + cube_row + cube_col+ colors[i]
+                                                    if cube_col == 1 && cube_row == 1
+                                                        input(type="submit",class = "btn-cube", value = "", id= this_id, style="background-color: " + colors_code[i])
+                                                    else
+                                                        input(type="submit",class = "btn-cube", value = "", id= this_id, style="background-color: " + colors_code[i], onClick = `nextColor("${this_id}")`)
+                                - i = i+1
+                            else
+                                div(class="face")
+    button(onClick="translateCube(document.getElementById('cube_2d'))") Solve!
